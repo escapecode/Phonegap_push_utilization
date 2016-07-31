@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+		<link rel="stylesheet" type="text/css" href="css/index2.css" />
+		<title>My Push</title>
+		<style>
+			button {
+				font-size		: 2em;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="home" class="app">
+			<h1>My Push</h1>
+			<div id="deviceready" class="blink">
+				<p class="event listening">Connecting to Device</p>
+				<p class="event received">Device is Ready</p>
+			</div>
+
+			<br />
+			<button id='register' onclick='deviceRegister()'>Register</button><br />
+			<button id='unregister' onclick='deviceUnregister()'>Unregister</button><br />
+			<div id="app-status-div">
+				<ul id="app-status-ul">
+				</ul>
+			</div>
+		</div>
+
+		 <script src="phonegap.js"></script>
+		 <script type="text/javascript" charset="utf-8" src="js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="js/PushNotification.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/app_push.js"></script>
+
+		<script type="text/javascript">
+			app.initialize();
+		</script>
+	</body>
+</html>
